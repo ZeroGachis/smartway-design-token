@@ -1,6 +1,6 @@
 {
   "name": "@zerogachis/smartway-design-token",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Smartway design tokens",
   "main": "tokens.json",
   "repository": {
