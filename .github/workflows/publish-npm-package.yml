@@ -1,0 +1,31 @@
+name: Publish package to npm
+
+on:
+    release:
+        types: [created]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+                  registry-url: 'https://npm.pkg.github.com'
+                  scope: '@zerogachis'
+
+            - name: Update package version
+              uses: mingjun97/file-regex-replace@v1
+              with:
+                  regex: '"version": "([0-9.]*)"'
+                  replacement: '"version": "${{ github.ref_name }}"'
+                  include: 'package.json'
+
+            - name: Publish
+              if: startsWith(github.ref, 'refs/tags/')
+              run: npm publish --access public
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
