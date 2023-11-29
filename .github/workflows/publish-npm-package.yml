@@ -5,7 +5,7 @@ on:
         types: [created]
 
 jobs:
-    build:
+    publish:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -18,11 +18,7 @@ jobs:
                   scope: '@zerogachis'
 
             - name: Update package version
-              uses: mingjun97/file-regex-replace@v1
-              with:
-                  regex: '"version": "([0-9.]*)"'
-                  replacement: '"version": "${{ github.ref_name }}"'
-                  include: 'package.json'
+              run: npm version --no-git-tag-version ${{ github.ref_name }}
 
             - name: Publish
               if: startsWith(github.ref, 'refs/tags/')

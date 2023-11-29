@@ -1,8 +1,11 @@
 {
   "name": "@zerogachis/smartway-design-token",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Smartway design tokens",
   "main": "tokens.json",
+  "scripts": {
+    "test": "echo \"Test\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZeroGachis/smartway-design-token.git"
