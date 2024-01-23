@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/ZeroGachis/smartway-design-token/issues"
   },
-  "homepage": "https://github.com/ZeroGachis/smartway-design-token#readme"
+  "homepage": "https://github.com/ZeroGachis/smartway-design-token#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
