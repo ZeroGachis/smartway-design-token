@@ -1,4 +1,4 @@
-import * as tokensJson from "./tokens.json";
+import * as tokensJson from "../tokens.json";
 import {
   BoxShadows,
   BoxShadow,
@@ -14,7 +14,7 @@ import {
   Color,
 } from "./TokensType";
 
-const parseShadow = (value: any): BoxShadow | undefined => {
+const parseShadow = (value: any): BoxShadow | void => {
   if (typeof value !== "string")
     return {
       color: value.color,
@@ -28,8 +28,11 @@ const parseShadow = (value: any): BoxShadow | undefined => {
 
 const parseAliasShadow =
   (shadow: BoxShadows) =>
-  (value: any): BoxShadow | undefined => {
-    if (typeof value === "string") return shadow[value.replace(/\D/g, "")];
+  (value: any): BoxShadow | void => {
+    if (typeof value === "string") {
+      const key = value.replace(/\D/g, "");
+      return shadow[key as keyof BoxShadows];
+    }
   };
 
 const parseTypography =
@@ -38,12 +41,24 @@ const parseTypography =
     return {
       fontWeight:
         font.fontWeight[
-          value["fontWeight"].replace("}", "").split(".").slice(-1)
+          value["fontWeight"]
+            .replace("}", "")
+            .split(".")
+            .slice(-1)[0] as keyof FontWeight
         ],
       fontSize:
-        font.fontSize[value["fontSize"].replace("}", "").split(".").slice(-1)],
+        font.fontSize[
+          value["fontSize"]
+            .replace("}", "")
+            .split(".")
+            .slice(-1)[0] as keyof FontSize
+        ],
       fontFamily:
-        font.fontFamily[value["fontFamily"].replace("{", "").replace("}", "")],
+        font.fontFamily[
+          value["fontFamily"]
+            .replace("{", "")
+            .replace("}", "") as keyof FontFamily
+        ],
     };
   };
 
@@ -58,14 +73,14 @@ const getValueToken = <T, R>(
   Object.keys(value).forEach((key) => {
     const parsedValue = parseMethod(value[key].value);
     if (parsedValue) {
-      values[key] = parseMethod(value[key].value);
+      (values as Record<string, R>)[key] = parsedValue;
     }
   });
   return values as T;
 };
 
 const getTokens = () => {
-  const shadows = getValueToken<BoxShadows, BoxShadow | undefined>(
+  const shadows = getValueToken<BoxShadows, BoxShadow | void>(
     tokensJson.global.shadow,
     parseShadow
   );
@@ -90,7 +105,7 @@ const getTokens = () => {
     ),
     boxShadow: {
       ...shadows,
-      ...getValueToken<BoxShadows, BoxShadow | undefined>(
+      ...getValueToken<BoxShadows, BoxShadow | void>(
         tokensJson.global.shadow,
         parseAliasShadow(shadows)
       ),

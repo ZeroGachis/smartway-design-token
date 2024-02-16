@@ -4,7 +4,8 @@
   "description": "Smartway design tokens",
   "main": "tokens.json",
   "scripts": {
-    "test": "echo \"Test\" && exit 1"
+    "type:check": "tsc",
+    "tsc": "tsc --project tsconfig.build.json"
   },
   "repository": {
     "type": "git",
