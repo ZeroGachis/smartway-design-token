@@ -1,3 +1,3 @@
-import tokens from "./src";
+import tokens from "./src/Tokens";
 
-export default tokens;
+export {tokens};
