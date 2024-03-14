@@ -2,7 +2,7 @@
   "name": "@zerogachis/smartway-design-token",
   "version": "0.0.1",
   "description": "Smartway design tokens",
-  "main": "tokens.json",
+  "main": "src/index.ts",
   "scripts": {
     "type:check": "tsc",
     "tsc": "tsc --project tsconfig.build.json"
