@@ -21,6 +21,9 @@ jobs:
       - name: Update package version
         run: npm version --no-git-tag-version ${{ github.ref_name }}
 
+      - name: Compile
+        run: npm run tsc
+
       - name: Publish to npm
         if: startsWith(github.ref, 'refs/tags/')
         run: npm publish --access public
