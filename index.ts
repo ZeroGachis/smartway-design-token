@@ -1,3 +1,3 @@
-import tokens from "./src/Tokens";
+import tokens from "./src";
 
 export {tokens};
