@@ -2,8 +2,8 @@
   "name": "@zerogachis/smartway-design-token",
   "version": "0.0.1",
   "description": "Smartway design tokens",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "main": "./dist/cjs/src/index.js",
+  "module": "./dist/esm/src/index.js",
   "files": [
     "dist"
   ],
