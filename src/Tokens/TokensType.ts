@@ -86,12 +86,10 @@ export interface Font {
 }
 
 export interface Typography {
-  [key: string]: {
-    n1: Font;
-    n2: Font;
-    n3: Font | undefined;
-    n4: Font | undefined;
-    n5: Font | undefined;
-    n6: Font | undefined;
-  };
+  n1: Font;
+  n2: Font;
+  n3: Font | undefined;
+  n4: Font | undefined;
+  n5: Font | undefined;
+  n6: Font | undefined;
 }
