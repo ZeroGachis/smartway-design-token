@@ -18,6 +18,9 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@zerogachis"
 
+      - name: install libraries
+        run: npm ci
+
       - name: Update package version
         run: npm version --no-git-tag-version ${{ github.ref_name }}
 
