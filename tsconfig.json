@@ -1,27 +1,17 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "declaration": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
-    "lib": ["esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noImplicitUseStrict": false,
-    "noStrictGenericChecks": false,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "outDir": "lib",
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "esnext"
+    "target": "ESNext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "ESNext",                                  /* Specify what module code is generated. */
+    "moduleResolution": "Node",                        /* Specify how TypeScript looks up a file from a given module specifier. Mandatory with resolveJsonModule set to true. */
+    "declaration": true,                                 /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "outDir": "./dist/esm",                                  /* Specify an output folder for all emitted files. */
+    "resolveJsonModule": true,                           /* Enable importing .json files. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["src", "./.eslintrc.json"],
+  "include": [
+    "./src"
+  ]
 }

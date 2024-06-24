@@ -1,4 +1,4 @@
-import * as tokensJson from "../tokens.json";
+import * as designTokensJson from "../../tokens.json";
 import {
   BoxShadows,
   BoxShadow,
@@ -79,7 +79,7 @@ const getValueToken = <T, R>(
   return values as T;
 };
 
-const getTokens = () => {
+export const getTokens = (tokensJson: any) => {
   const shadows = getValueToken<BoxShadows, BoxShadow | void>(
     tokensJson.global.shadow,
     parseShadow
@@ -165,6 +165,5 @@ const getTokens = () => {
     },
   };
 };
-
-const tokens = getTokens();
-export default tokens;
+const tokens = getTokens(designTokensJson);
+export { tokens };
