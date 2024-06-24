@@ -1,0 +1,576 @@
+{
+  "global": {
+    "spacing": {
+      "xxs": {
+        "value": "4",
+        "type": "spacing"
+      },
+      "xs": {
+        "value": "8",
+        "type": "spacing"
+      },
+      "s": {
+        "value": "16",
+        "type": "spacing"
+      },
+      "m": {
+        "value": "24",
+        "type": "spacing"
+      },
+      "l": {
+        "value": "32",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "40",
+        "type": "spacing"
+      },
+      "xxl": {
+        "value": "48",
+        "type": "spacing"
+      },
+      "xxxl": {
+        "value": "56",
+        "type": "spacing"
+      }
+    },
+    "shadow": {
+      "100": {
+        "value": {
+          "color": "#919eab33",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "12",
+          "blur": "24",
+          "spread": "-4"
+        },
+        "type": "boxShadow"
+      },
+      "300": {
+        "value": {
+          "color": "#919eab1f",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "12",
+          "blur": "24",
+          "spread": "-4"
+        },
+        "type": "boxShadow"
+      },
+      "500": {
+        "value": {
+          "color": "#919eab3d",
+          "type": "dropShadow",
+          "x": "-40",
+          "y": "40",
+          "blur": "80",
+          "spread": "-8"
+        },
+        "type": "boxShadow"
+      },
+      "700": {
+        "value": {
+          "color": "#919eab3d",
+          "type": "dropShadow",
+          "x": "-20",
+          "y": "20",
+          "blur": "40",
+          "spread": "-4"
+        },
+        "type": "boxShadow"
+      },
+      "card-mobile": {
+        "value": "{shadow.100}",
+        "type": "boxShadow"
+      },
+      "dialog": {
+        "value": "{shadow.300}",
+        "type": "boxShadow"
+      },
+      "card": {
+        "value": "{shadow.500}",
+        "type": "boxShadow"
+      },
+      "dropdown": {
+        "value": "{shadow.700}",
+        "type": "boxShadow"
+      }
+    },
+    "border-radius": {
+      "xs": {
+        "value": "8",
+        "type": "borderRadius"
+      },
+      "s": {
+        "value": "14",
+        "type": "borderRadius"
+      },
+      "m": {
+        "value": "18",
+        "type": "borderRadius"
+      },
+      "l": {
+        "value": "24",
+        "type": "borderRadius"
+      }
+    },
+    "font-weight": {
+      "regular": {
+        "value": "400",
+        "type": "fontWeights"
+      },
+      "medium": {
+        "value": "500",
+        "type": "fontWeights"
+      },
+      "semi-bold": {
+        "value": "600",
+        "type": "fontWeights"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeights"
+      }
+    },
+    "line-height": {
+      "normal": {
+        "value": "120%",
+        "type": "lineHeights"
+      },
+      "loose": {
+        "value": "140%",
+        "type": "lineHeights"
+      }
+    },
+    "primary": {
+      "100": {
+        "value": "#daf1ec",
+        "type": "color"
+      },
+      "300": {
+        "value": "#31e3bc",
+        "type": "color"
+      },
+      "500": {
+        "value": "#18a586",
+        "type": "color"
+      },
+      "700": {
+        "value": "#017f63",
+        "type": "color"
+      },
+      "900": {
+        "value": "#225348",
+        "type": "color"
+      }
+    },
+    "secondary": {
+      "100": {
+        "value": "#dfe5fc",
+        "type": "color"
+      },
+      "300": {
+        "value": "#7499fe",
+        "type": "color"
+      },
+      "500": {
+        "value": "#365cee",
+        "type": "color"
+      },
+      "700": {
+        "value": "#1635ae",
+        "type": "color"
+      },
+      "900": {
+        "value": "#0a2482",
+        "type": "color"
+      }
+    },
+    "info": {
+      "100": {
+        "value": "#d6f6fc",
+        "type": "color"
+      },
+      "300": {
+        "value": "#61f3f3",
+        "type": "color"
+      },
+      "500": {
+        "value": "#00c7eb",
+        "type": "color"
+      },
+      "700": {
+        "value": "#006c9c",
+        "type": "color"
+      },
+      "900": {
+        "value": "#003768",
+        "type": "color"
+      }
+    },
+    "success": {
+      "100": {
+        "value": "#d6f7e9",
+        "type": "color"
+      },
+      "300": {
+        "value": "#86e8ab",
+        "type": "color"
+      },
+      "500": {
+        "value": "#00cc76",
+        "type": "color"
+      },
+      "700": {
+        "value": "#166655",
+        "type": "color"
+      },
+      "900": {
+        "value": "#0a5554",
+        "type": "color"
+      }
+    },
+    "warning": {
+      "100": {
+        "value": "#fff2d6",
+        "type": "color"
+      },
+      "300": {
+        "value": "#ffd666",
+        "type": "color"
+      },
+      "500": {
+        "value": "#ffab00",
+        "type": "color"
+      },
+      "700": {
+        "value": "#925800",
+        "type": "color"
+      },
+      "900": {
+        "value": "#7a4100",
+        "type": "color"
+      }
+    },
+    "error": {
+      "100": {
+        "value": "#ffe4de",
+        "type": "color"
+      },
+      "300": {
+        "value": "#ffac82",
+        "type": "color"
+      },
+      "500": {
+        "value": "#ff5630",
+        "type": "color"
+      },
+      "700": {
+        "value": "#b71d18",
+        "type": "color"
+      },
+      "900": {
+        "value": "#7a0916",
+        "type": "color"
+      }
+    },
+    "neutral": {
+      "0": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "100": {
+        "value": "#f4f6f8",
+        "type": "color"
+      },
+      "200": {
+        "value": "#edeff2",
+        "type": "color"
+      },
+      "300": {
+        "value": "#dfe3e8",
+        "type": "color"
+      },
+      "400": {
+        "value": "#c4cdd5",
+        "type": "color"
+      },
+      "500": {
+        "value": "#919eab",
+        "type": "color",
+        "description": "Placeholder, text when disabled"
+      },
+      "600": {
+        "value": "#637381",
+        "type": "color",
+        "description": "Prefilled"
+      },
+      "700": {
+        "value": "#2f4158",
+        "type": "color"
+      },
+      "800": {
+        "value": "#212b36",
+        "type": "color",
+        "description": "Text"
+      },
+      "900": {
+        "value": "#1a2026",
+        "type": "color"
+      }
+    },
+    "font-size": {
+      "xxs": {
+        "value": "12",
+        "type": "fontSizes"
+      },
+      "xs": {
+        "value": "14",
+        "type": "fontSizes"
+      },
+      "s": {
+        "value": "16",
+        "type": "fontSizes"
+      },
+      "m": {
+        "value": "18",
+        "type": "fontSizes"
+      },
+      "l": {
+        "value": "20",
+        "type": "fontSizes"
+      },
+      "xl": {
+        "value": "24",
+        "type": "fontSizes"
+      },
+      "xxl": {
+        "value": "26",
+        "type": "fontSizes"
+      },
+      "xxxl": {
+        "value": "32",
+        "type": "fontSizes"
+      }
+    },
+    "headline": {
+      "n1": {
+        "value": {
+          "fontWeight": "{font-weight.bold}",
+          "fontSize": "{font-size.xxxl}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Mobile: Top App bar (N1)\nTablet: Top App bar (N1, N2) "
+      },
+      "n2": {
+        "value": {
+          "fontWeight": "{font-weight.bold}",
+          "fontSize": "{font-size.xxl}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography"
+      },
+      "n3": {
+        "value": {
+          "fontWeight": "{font-weight.bold}",
+          "fontSize": "{font-size.xl}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Mobile: Top app bar (N2)"
+      },
+      "n4": {
+        "value": {
+          "fontWeight": "{font-weight.bold}",
+          "fontSize": "{font-size.l}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Global: Modal title\nTablet: Article title"
+      },
+      "n5": {
+        "value": {
+          "fontWeight": "{font-weight.bold}",
+          "fontSize": "{font-size.m}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Mobile: Article title"
+      },
+      "n6": {
+        "value": {
+          "fontWeight": "{font-weight.semi-bold}",
+          "fontSize": "{font-size.m}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Global: Section title"
+      }
+    },
+    "body": {
+      "n1": {
+        "value": {
+          "fontWeight": "{font-weight.semi-bold}",
+          "fontSize": "{font-size.s}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Text, Value"
+      },
+      "n2": {
+        "value": {
+          "fontWeight": "{font-weight.regular}",
+          "fontSize": "{font-size.s}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography"
+      },
+      "n3": {
+        "value": {
+          "fontWeight": "{font-weight.semi-bold}",
+          "fontSize": "{font-size.xs}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography"
+      },
+      "n4": {
+        "value": {
+          "fontWeight": "{font-weight.regular}",
+          "fontSize": "{font-size.xs}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography"
+      }
+    },
+    "label": {
+      "n1": {
+        "value": {
+          "fontWeight": "{font-weight.regular}",
+          "fontSize": "{font-size.xs}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Global : Value label, Table label"
+      },
+      "n2": {
+        "value": {
+          "fontWeight": "{font-weight.regular}",
+          "fontSize": "{font-size.xxs}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Global : Helper text\nMobile: Navigation bar label"
+      }
+    },
+    "button": {
+      "n1": {
+        "value": {
+          "fontWeight": "{font-weight.bold}",
+          "fontSize": "{font-size.s}",
+          "fontFamily": "{public-sans}",
+          "lineHeight": "{line-height.loose}"
+        },
+        "type": "typography",
+        "description": "Global: Button (M), Label (M)"
+      },
+      "n2": {
+        "value": {
+          "fontWeight": "{font-weight.semi-bold}",
+          "fontSize": "{font-size.s}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Mobile : \"Radio button\" button"
+      },
+      "n3": {
+        "value": {
+          "fontWeight": "{font-weight.bold}",
+          "fontSize": "{font-size.xs}",
+          "fontFamily": "{public-sans}"
+        },
+        "type": "typography",
+        "description": "Global: Button (S), Label (S)"
+      }
+    },
+    "public-sans": {
+      "value": "Public Sans",
+      "type": "fontFamilies"
+    },
+    "noto-sans": {
+      "value": "Noto Sans",
+      "type": "fontFamilies"
+    }
+  },
+  "$themes": [
+    {
+      "id": "e23d363c0d2bee03348982313a86c9562a1a333c",
+      "name": "Smartway",
+      "$figmaStyleReferences": {
+        "primary.100": "S:dc30c35d4eb5ef544575431f3a7e986c4b9e2827,",
+        "primary.300": "S:3f2f90b040d864264cd0e8e51b61665b08cf2f01,",
+        "primary.500": "S:96e20e931caea0e9527308ab1e3a4c188382c5fb,",
+        "primary.700": "S:3b060d480b5f0695e8e306434390e84f514b4401,",
+        "primary.900": "S:21fb1c97321efaae43a4392290b07b0ecbc1be9f,",
+        "secondary.100": "S:0704f7e0ec5bd5f848bc2f7cc8f86ba459d442c9,",
+        "secondary.300": "S:d68d94d9a16b29faaa1c35ec18f94f41004f0802,",
+        "secondary.500": "S:f467fa657d7fd905af9dc116f41d6e93c24e02aa,",
+        "secondary.700": "S:6acec47478d84f8189d26a19220cda180ec56031,",
+        "secondary.900": "S:9ac7aa1a44f40e6fe9f463e8ee41859a902a9437,",
+        "info.100": "S:7bb9fc7b02fe9eefa976c683d744ce334094ba57,",
+        "info.300": "S:dba4b1d6df0f55dda671a296ddaa823c559651d4,",
+        "info.500": "S:31beb7273dd9d2250f977e2be24943e1aba30f23,",
+        "info.700": "S:ce1885bb9d56fbc0b0e2a1770773c82fad50bb6b,",
+        "info.900": "S:fce0ceedddfa35a00611c86e1628bd3bc02d0c5c,",
+        "warning.100": "S:68ce30ac8fb25d42f98d62941976ef3e09ae301f,",
+        "warning.300": "S:274853bcc53afb7260ed6c811b81330a356eae86,",
+        "warning.500": "S:5fea815b5693a474114b672dd30cced2b63f4e69,",
+        "warning.900": "S:b0213debbc94c5d0ede45c6b7a0113ddd88c08a6,",
+        "error.100": "S:298fffee9c7f56f8fe37e4e1438cb936e9b04114,",
+        "error.300": "S:695659bb7414d8603f94c90c95736eea77af460a,",
+        "error.500": "S:4047a224f957695ed4a15f33f6a1c7f4b8ed7e47,",
+        "error.700": "S:21f41ff4b5fc5973a571b63bbdb73d9cd56f1d32,",
+        "error.900": "S:85ad590884c7af57a261a0936010f043f78989ee,",
+        "neutral.0": "S:61c7a5cf83e53c5c456a6e67b756dd54485483c5,",
+        "neutral.100": "S:3c691d1ad474fb0db8ec1f2450e46c467ccd4450,",
+        "neutral.200": "S:7f49f00adeee9978c38ec83f3b2c3c0886bb50d5,",
+        "neutral.300": "S:fb3ca621a768f56eb7a3422225c3f7b3c7c51f83,",
+        "neutral.400": "S:e4e5872c821bc23c3e65f29b9ea64e6504d6bae7,",
+        "neutral.500": "S:0b5bc4f6c20504e3288d5b1eb50399327be99490,",
+        "neutral.600": "S:549466bcca00017456ce703963edd769284a197e,",
+        "neutral.700": "S:bcf734e8e76e6723e65fd371f94f28e2d4e66df5,",
+        "neutral.800": "S:f79516da9ee979d238e5c282a0e7bd8ed8f3493f,",
+        "neutral.900": "S:c6c83b2ce2e0bb1a744dbece15078315998a9918,",
+        "success.900": "S:a379c0b00ec476d50c6fdd850238fd3dbec83cc2,",
+        "success.700": "S:034c69562162ada066dd2f2df49f9ad854f039c9,",
+        "success.500": "S:a9c0588d7832f5d21dce85e950ae35f373d16f30,",
+        "success.300": "S:23808411a29f5f4770d451d084e0bd3cbe529894,",
+        "success.100": "S:55546518f142d3ffa7a34cb5aa1e11a657588ecf,",
+        "warning.700": "S:55ce1370591dd3708cbc088b770d638adbebddc4,",
+        "headline.n1": "S:ecdf3206ce84b83792aa7ac7f25ef36905d95e78,",
+        "headline.n2": "S:22f840529aad3fe8e38f2b5462c045a32fa4e871,",
+        "headline.n3": "S:6a0c162f66af44c7264f09fd6fa864a052dd1cfa,",
+        "headline.n4": "S:846ef6596108d614c6162fef1ef4e2d8ae8a65eb,",
+        "headline.n5": "S:f8ab1c67851cdfb1377792d50811a521db8dc341,",
+        "headline.n6": "S:cc482e70e47b612d85f95e61b3d682476c97cb6a,",
+        "body.n1": "S:6f99a92412a1b256577c68eb861c4647562a80bc,",
+        "body.n2": "S:f8bc9590028979caaa6fd2ce46c54ccf3120e262,",
+        "body.n3": "S:c6ef08774eddeafd85209ccc83fce05ec477e800,",
+        "body.n4": "S:6a0c6aa80896c8431107b2d1c2c3a96d55891f3e,",
+        "label.n1": "S:c4bbc51b20bd8bd77a36dd78cd658e36bf870f1e,",
+        "label.n2": "S:6b508ea6886256adeaced29b17f5ce4c7f97e258,",
+        "button.n1": "S:4058fe4383cf9337094c1cc75e891c647c577ce4,",
+        "button.n2": "S:55ffa5e6d5cb7b63def7059c1188a516837df978,",
+        "button.n3": "S:2b15f8969b2a7895f51224d8557331a897f68c05,"
+      },
+      "selectedTokenSets": {
+        "global": "enabled"
+      }
+    }
+  ],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  }
+}
