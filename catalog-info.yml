@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: smartway-design-token
+  annotations:
+    github.com/project-slug: ZeroGachis/smartway-design-token
+  type: tools
+  lifecycle: production
+  system: FOS
+  owner: FOS_Squad
