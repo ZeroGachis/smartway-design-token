@@ -14,6 +14,13 @@ import {
   Color,
 } from "./TokensType";
 
+const getShadowTokens = (global: any) =>
+  Object.fromEntries(
+    Object.keys(global)
+      .filter((key) => global[key]?.type === "boxShadow")
+      .map((key) => [key, global[key]])
+  );
+
 const parseShadow = (value: any): BoxShadow | void => {
   if (typeof value !== "string")
     return {
@@ -80,8 +87,9 @@ const getValueToken = <T, R>(
 };
 
 export const getTokens = (tokensJson: any) => {
+  const shadowTokens = getShadowTokens(tokensJson.global);
   const shadows = getValueToken<BoxShadows, BoxShadow | void>(
-    tokensJson.global.shadow,
+    shadowTokens,
     parseShadow
   );
   const fontSize = getValueToken<FontSize, number>(
@@ -106,7 +114,7 @@ export const getTokens = (tokensJson: any) => {
     boxShadow: {
       ...shadows,
       ...getValueToken<BoxShadows, BoxShadow | void>(
-        tokensJson.global.shadow,
+        shadowTokens,
         parseAliasShadow(shadows)
       ),
     },
