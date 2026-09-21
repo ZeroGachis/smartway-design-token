@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/ZeroGachis/smartway-design-token#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.24.7",
-    "@babel/preset-typescript": "^7.24.7",
+    "@babel/preset-env": "^8.0.0",
+    "@babel/preset-typescript": "^8.0.0",
     "@jest/globals": "^30.0.0",
     "@types/jest": "^30.0.0",
     "jest": "^30.0.0",
