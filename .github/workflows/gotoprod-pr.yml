@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-gotoprod-pr-workflow:
-    uses: ZeroGachis/.github/.github/workflows/create-gotoprod-pr.yml@v4
+    uses: ZeroGachis/.github/.github/workflows/create-gotoprod-pr.yml@v6
